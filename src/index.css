@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling for the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind CSS styles for body */
+body {
+  font-family: 'Inter', sans-serif; /* You can change the font family if needed */
+  line-height: 1.5;
+  background-color: #f9fafb; /* Tailwind's bg-gray-100 */
+  color: #333;
+}
+
+/* Tailwind utility classes */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Add custom smooth scroll on large screens */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* Example custom utility class for colors (you can change these based on your theme) */
+.primary {
+  color: #1d4ed8; /* Tailwind's blue-600 */
+}
+
+.primary-bg {
+  background-color: #1d4ed8; /* Tailwind's blue-600 */
+}
+
+.hover\:primary:hover {
+  color: #1d4ed8; /* Tailwind's blue-600 */
+}
